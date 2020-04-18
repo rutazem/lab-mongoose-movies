@@ -1,0 +1,21 @@
+<h2>New Celebrity</h2>
+
+
+
+<form action="/celebrities/new" method="post">
+
+    <input type="text" name="name" value="{{myBook.title}}">
+
+
+    <input type="text" name="occupation" value="{{myBook.author}}">
+
+
+    <input type="text" name="catchPhrase" value="{{myBook.description}}">
+
+
+
+    <button type="submit">ADD</button>
+</form>
+
+
+{{!-- Values for those keys should come from the form (req.body is the object full of the values from the form) --}}
